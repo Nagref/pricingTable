@@ -5,28 +5,26 @@
 }
 
 :root {
-  --color-gray-50: #f8fafc;
-  --color-gray-100: #f1f5f9;
-  --color-gray-200: #e2e8f0;
-  --color-gray-300: #cbd5e1;
-  --color-gray-400: #94a3b8;
-  --color-gray-500: #64748b;
-  --color-gray-600: #475569;
-  --color-gray-700: #334155;
-  --color-gray-800: #1e293b;
-  --color-gray-900: #0f172a;
-  --color-green-100: #04d361;
-  --color-green-200: #1b873f;
-  --color-purple-100: #996dff;
-  --color-purple-200: #7c3aed;
-  --color-white: #ffffff;
-  --color-orange: #fba94c;
+  --background: #22212C;
+  --comment: #7970A9;
+  --comment-secondary: #454158;
+  --selection: #414D58;
+  --selection-secondary: #8f9ba8;
+  --black: #0B0D0F;
+  --foreground: #F8F8F2;
+  --cyan: #80FFEA;
+  --green: #8AFF80;
+  --orange: #FFCA80;
+  --yellow: #FFFF80;
+  --red: #FF9580;
+  --pink: #FF80BF;
+  --purple: #9580FF;
 }
 
 html,
 body {
-  font-family: "Titillium Web", sans-serif;
-  background-color: var(--color-gray-50);
+  font-family: 'JetBrains Mono', monospace;
+  background-color: var(--background);
 }
 
 .pricing-table {
@@ -42,9 +40,9 @@ section {
 
 section .inner {
   padding: 24px;
-  background-color: var(--color-white);
+  background-color: var(--foreground);
 
-  border: 1px solid var(--color-gray-200);
+  border: 1px solid var(--selection-secondary);
   border-radius: 10px;
 }
 
@@ -55,7 +53,7 @@ section .inner {
   letter-spacing: 0.06em;
   text-transform: uppercase;
 
-  color: var(--color-purple-200);
+  color: var(--purple);
 }
 
 .title-price {
@@ -70,14 +68,14 @@ section .inner {
   font-size: 24px;
   line-height: 37px;
 
-  color: var(--color-gray-800);
+  color: var(--comment-secondary);
 }
 
 .price {
   font-size: 18px;
   line-height: 27px;
 
-  color: var(--color-gray-800);
+  color: var(--comment-secondary);
 }
 
 .price strong {
@@ -94,7 +92,7 @@ button {
   padding: 16px 24px;
   width: 100%;
 
-  border: 1px solid var(--color-gray-800);
+  border: 1px solid var(--background);
   border-radius: 4px;
 
   margin-top: 16px;
@@ -103,18 +101,18 @@ button {
   font-size: 16px;
   line-height: 24px;
 
-  color: var(--color-gray-800);
+  color: var(--background);
 
   cursor: pointer;
 }
 
 button.primary:hover {
-  background-color: var(--color-gray-800);
-  color: var(--color-white);
+  background-color: var(--background);
+  color: var(--foreground);
 }
 
 ul {
-  border-top: 1px solid var(--color-gray-200);
+  border-top: 1px solid var(--selection-secondary);
   padding-top: 16px;
   margin-top: 16px;
 
@@ -136,17 +134,17 @@ li span {
   line-height: 24px;
   letter-spacing: 0.06em;
 
-  color: var(--color-gray-600);
+  color: var(--background);
 }
 
 li i.ph-check {
   font-size: 20px;
-  color: var(--color-green-200);
+  color: var(--green);
 }
 
 li i.ph-info {
   font-size: 16px;
-  color: var(--color-gray-900);
+  color: var(--background);
 }
 
 .enterprise .title {
@@ -179,7 +177,7 @@ section.best::before {
 
   display: inline-block;
 
-  background-color: var(--color-orange);
+  background-color: var(--orange);
   padding: 8px 16px;
   border-radius: 6px;
 
@@ -192,42 +190,42 @@ section.best::before {
 
 .ultimate .inner {
   padding-top: 40px;
-  background-color: var(--color-gray-900);
+  background-color: var(--black);
 }
 
 .ultimate .title,
 .ultimate .price {
-  color: var(--color-gray-50);
+  color: var(--selection-secondary);
 }
 
 .inner p {
-  color: var(--color-purple-100);
+  color: var(--purple);
 }
 
 button.secondary {
-  background-color: var(--color-purple-100);
-  color: var(--color-white);
+  background-color: var(--purple);
+  color: var(--foreground);
 }
 
 button.secondary:hover {
-  background-color: var(--color-purple-200);
+  background-color: var(--pink);
 }
 
 .ultimate ul {
-  border-color: var(--color-gray-700);
+  border-color: var(--selection-secondary);
 }
 
 .ultimate li span {
-  color: var(--color-gray-300);
+  color: var(--selection-secondary);
 }
 
 .ultimate li .ph-info {
-  color: var(--color-gray-500);
+  color: var(--selection);
 }
 
 /*transition animation*/
 section .inner:hover {
-  border-color: var(--color-purple-100);
+  border-color: var(--purple);
 }
 
 section .inner {
